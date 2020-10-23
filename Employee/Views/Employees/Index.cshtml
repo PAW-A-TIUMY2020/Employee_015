@@ -48,7 +48,7 @@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EmployeeId"><i class="glyphicon glyphicon-pencil"></i></a> |
                 <a asp-action="Details" asp-route-id="@item.EmployeeId"><i class="glyphicon glyphicon-list-alt"></i></a> |
-                <a asp-action="Delete" asp-route-id="@item.EmployeeId" ><i class="glyphicon glyphicon-trash"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.EmployeeId" onclick="return confirm('Are you sure want to delete this record?')"><i class="glyphicon glyphicon-trash"></i></a>
             </td>
         </tr>
 }
